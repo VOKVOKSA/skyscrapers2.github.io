@@ -1,0 +1,65 @@
+:root {
+    --backcol: rgb(0, 0, 60);
+    --sun-day-night: white;
+    --building1: rgb(1, 1, 1);
+    --building2: black;
+    --tsvetokna1: blueviolet;
+    --tsvetokna2: green;
+}
+body {
+    background-color: var(--backcol);
+}
+.sun {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(closest-corner, var(--sun-day-night), var(--backcol));
+    border-radius: 50px;
+    margin-bottom: 220px;
+}
+
+.buildingsleva {
+    width: 200px;
+    height: 400px;
+    display: inline flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--building1);
+    margin-left: 100px;
+}
+
+.buildingcenter {
+    height: 300px;
+    width: 150px;
+    background-color: var(--building1);
+    display: inline flex;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--building1);
+    margin-left: 100px;
+}
+
+.okno1 {
+    height: 400px;
+    width: 5px;
+    background-color: var(--tsvetokna1);
+}
+
+.okno2 {
+    height: 16px;
+    width: 8px;
+    background-color: var(--tsvetokna2);
+    margin-right: 4px;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --backcol: rgb(105, 105, 255);
+        --sun-day-night: rgb(255, 140, 0);
+        --building1: grey;
+        --building2: green;
+        --tsvetokna1: violet;
+        --tsvetokna2: greenyellow;
+    }
+}
